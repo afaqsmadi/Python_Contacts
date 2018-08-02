@@ -18,6 +18,17 @@ from django.contrib import admin
 
 urlpatterns = [
 
-    url(r'^admin/', admin.site.urls)
+    url(r'^admin/', include(admin.site.urls))
+
         #your code is here..
+    # url(r'^(?P<contacts>[\w-]+)-(?P<contacts>\w+)/', include([
+    # url(r'^urls/$', views.urls)
+    # ])),
+    # r = requests.get('', auth=('user', 'pass'))
+    # r.status_code
+    # r.headers['content-type', 'hello world']
+    # r.encoding
+    # r.text
+    
+    r.json()
 ]
